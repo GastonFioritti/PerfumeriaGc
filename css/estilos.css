@@ -1,0 +1,441 @@
+
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+  }
+  body{
+   font-family:'Montserrat', sans-serif;
+   font-weight: bold;
+  }
+  /*Header y Nav*/
+  header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoempresa {
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  
+  .logo-nombre {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 10px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav > ul > li > .submenu-list {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+  }
+  
+  nav .submenu-list li {
+    height: 50px;
+  }
+  
+  nav > ul > li:hover > .submenu-list {
+    display: block;
+  }
+  
+    /*INICIO*/
+  .encabezado {
+    background-image: url("../imagenes/pexels-mart-production-8450259.jpg");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-align: center;
+  }
+
+  .encabezado p {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .encabezado h1 {
+    font-size: 15px;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+
+  .boton-banner {
+    background: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 1000px;
+    padding: 20px 62px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .promocion1  img {
+    width: 90%; 
+    height: 550px; 
+  }
+
+  .promocion1{
+    background-color: #000000
+  }
+
+  .promocion1 {
+    display: flex;
+    align-items: center;
+  }
+  .promocion1 {
+    display: flex;
+    align-items: center;
+  }
+  .promocionimg img {
+    width: 500px !important;
+    height: 500px !important;
+    margin-right: 30px;
+    border: none;
+    outline: none;
+   }
+  .promocion2{
+    background-color: dimgray;
+  }
+  .boton-promociones {
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 1000px;
+    padding: 20px 30px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .promocion2 {
+    display: flex;
+    align-items: center;
+  }
+  .promocion2 img {
+    width: 500px; 
+    overflow: hidden; 
+  }
+  .text-container {
+    flex: 1;
+    padding: 0 20px; 
+  }
+  .text-container h2,
+  .text-container p {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  /* NOSOTROS */
+  
+  .letratitulonosotros {
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .descripcionlocal {
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .locales {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .local {
+    flex: 1;
+    margin-right: 10px; 
+  }
+  
+  .local img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .local-info {
+    font-size: 20px;
+}
+.mapa{
+  padding-top: 20px;
+}
+/* CONTACTO */
+
+.letracontacto {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ .centradocontacto > * {
+  padding: 5em;
+}
+ .fondocontacto {
+  background: #ffffff;
+}
+ .fondocontacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+ .fondocontacto form label {
+  display: block;
+}
+ .fondocontacto form p {
+  margin: 0;
+  padding: 1em;
+}
+ .fondocontacto form .block {
+  grid-column: 1 / 3;
+}
+ .fondocontacto form button,
+ .fondocontacto form input,
+ .fondocontacto form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #000000;
+  border-bottom: 1px solid #ecc9ee;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 20px;
+}
+ .fondocontacto form button {
+  background: #ecc9ee;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+ .fondocontacto form button:hover,
+ .fondocontacto form button:focus {
+  background: #000000;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+ .contact-info h4,
+ .contact-info ul,
+ .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+/* PRODUCTOS Y MARCAS */
+ .caja {
+  display: flex;
+  padding: 60px;
+  gap: 40px;
+  background-color: #ffffff;
+}
+.caja_titulo{
+  text-align: center;
+  font-weight: bold;
+}
+ .caja .cajita {
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+ .caja .caja_img {
+  width: 70%;
+  transition: all .5s;
+}
+ .caja .cajita:hover img {
+  transform: scale(1.2);
+}
+ .cajita figure {
+  overflow: hidden;
+  text-align: center;
+}
+/* FOOTER */
+.footer {
+  background: #000000;
+  padding: 10px 0px;
+  text-align: center;
+}
+.footer .redes {
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+}
+.footer .redes a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.footer .redes a:hover {
+  color: #fff;
+}
+.footer .redes ul {
+  padding: 0;
+  margin: 0;
+}
+.footer .redes ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer p {
+  font-size: 12px;
+}
+
+  /*PROMOCIONES INICIO*/ 
+    .promocion1  img {
+      width: 90%; 
+      height: 550px; 
+    }
+    .promocion1{
+      background-color: #000000
+    }
+    
+    .promocion1 {
+      display: flex;
+      align-items: center;
+    }
+    
+    .promocion1 {
+      display: flex;
+      align-items: center;
+    }
+    .promocionimg img {
+      width: 500px !important;
+      height: 500px !important;
+      margin-right: 30px;
+      border: none;
+      outline: none;
+     }
+    .promocion2{
+      background-color: dimgray;
+    }
+    .boton-promociones {
+        background: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 1000px;
+        padding: 20px 30px;
+        color: #000000;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .promocion2 {
+      display: flex;
+      align-items: center;
+    }
+    
+    .promocion2 img {
+      width: 500px; 
+      overflow: hidden; 
+    }
+    
+    .text-container {
+      flex: 1;
+      padding: 0 20px; 
+    }
+   
+    .text-container h2,
+    .text-container p {
+      font-weight: bold;
+      color: #ffffff;
+    }
+ 
+    @media (max-width: 753px) {
+      .boton-banner {
+          padding: 15px 40px;
+          font-size: 15px;
+        }
+        .text-container{
+          font-size: 10px;
+        }
+        .boton-promociones {
+          padding: 10px 10px;
+          font-size: 10px;
+      }
+      }
+    @media (max-width: 705px) {
+      .footer .redes ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer .redes ul li {
+        margin: 5px 0;
+      }
+
+      .footer p {
+        font-size: 10px;
+      }
+    }
+    @media (max-width: 480px) {
+        .boton-banner {
+          padding: 20px 42px;
+          font-size: 10px;
+        }
+
+        .promocionimg img{
+          width: 200px !important;
+          height: 200px !important;
+        }
+        
+        .encabezado p {
+          font-size: 20px;}
+        .encabezado h1 {
+          font-size: 15px;
+     }
+      .text-container{
+        font-size: 7px;
+     }
+      .text-container h2{
+      font-size: 12px;
+    }
+    nav{
+      font-size: 10px;
+    }
+    footer li{
+      font-size: 8px;
+    }
+  }
+  @media (max-width: 422px) {
+    .boton-promociones {
+      padding: 3px 3px;
+      font-size: 8px;
+    }
+    .text-container{
+      font-size: 5px;
+     }
+    }
+
+ 
+  
+    
+
+
