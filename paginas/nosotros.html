@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de</title>
-    <link rel="shortcut icon" href="../imagenes/240_F_58955337_XuDbkuR03WZTORkbzXwCEdin45lunC4B.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> <link rel="shortcut icon" href="../imagenes/240_F_58955337_XuDbkuR03WZTORkbzXwCEdin45lunC4B.jpg" type="image/x-icon">
 <link rel="stylesheet" href="../css/estilos.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,53 +15,67 @@
 
 </head>
 <body>
-    <header>
-      <div class="logoempresa">
-        <img src="../imagenes/Fondo.png" alt="logoempresa" class="logoempresa">
-        <h2 class="logo-nombre">Perfumería GC</h2>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <img src="../imagenes/Fondo.png" alt="logoempresa" class="logoempresa">
+          <a class="navbar-brand" href="#">Perfumería GC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="btn btn-dark" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Productos</button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="../paginas/fragancias_femeninas.html">Fragancias Femeninas</a></li>
+                <li><a class="dropdown-item" href="../paginas/fragancias_masculinas.html">Fragancias Masculinas</a></li>
+                <li><a class="dropdown-item" href="../paginas/fragancias_unisex.html">Fragancias Unisex</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Marcas</button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Chanel</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Dior</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Gucci</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Dolce & Gabbana</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Versace</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Calvin Klein</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Armani</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Marc Jacobs</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Lancôme</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Estée Lauder</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Yves Saint</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Hugo Boss</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Tom Ford</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Givenchy</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Bvlgari</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Jean Paul </a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Issey Miyake</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Valentino</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Carolina Herrera</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Jimmy Choo</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Ralph Lauren</a></li>
+                <li><a class="dropdown-item" href="../paginas/marcas.html">Victoria's Secret</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-dark" href="../paginas/nosotros.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-dark" href="../paginas/Contacto.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./productos.html">Productos</a>
-            <ul class="submenu-list">
-              <li><a href="#">Fragancias Femeninas</a></li>
-              <li><a href="#">Fragancias Masculinas</a></li>
-              <li><a href="#">Fragancias Unisex</a></li>
-            </ul>
-          </li>
-          <li><a href="./marcas.html">Marcas</a>
-            <ul class="submenu-list">
-            <li><a href="#">Chanel</a></li>
-            <li><a href="#">Dior</a></li>
-            <li><a href="#">Gucci</a></li>
-            <li><a href="#">Dolce & Gabbana</a></li>
-            <li><a href="#">Versace</a></li>
-            <li><a href="#">Calvin Klein</a></li>
-            <li><a href="#">Armani</a></li>
-            <li><a href="#">Marc Jacobs</a></li>
-            <li><a href="#">Lancôme</a></li>
-            <li><a href="#">Estée Lauder</a></li>
-            <li><a href="#">Yves Saint Laurent</a></li>
-            <li><a href="#">Hugo Boss</a></li>
-            <li><a href="#">Tom Ford</a></li>
-            <li><a href="#">Givenchy</a></li>
-            <li><a href="#">Bvlgari</a></li>
-            <li><a href="#">Jean Paul Gaultier</a></li>
-            <li><a href="#">Issey Miyake</a></li>
-              <li><a href="#">Valentino</a></li>
-              <li><a href="#">Carolina Herrera</a></li>
-              <li><a href="#">Jimmy Choo</a></li>
-              <li><a href="#">Ralph Lauren</a></li>
-              <li><a href="#">Victoria's Secret</a></li>
-            </ul>
-          </li>
-          <li><a href="./nosotros.html">Acerca de</a></li>
-          <li><a href="./Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-        
-        </header>
+    </nav>
+  </header>
             <main class=>
                 <h1 class="titulos">Nosotros</h1>
                 <p class="descripcionlocal">La Perfumería GC es un local especializado en perfumes de alta calidad y exclusividad. Desde que entres, te envolverá un ambiente cálido y acogedor que te invitará a sumergirte en la amplia colección de fragancias que ofrecen. En sus estantes encontrarás todo tipo de perfumes, desde los clásicos y tradicionales hasta los más nuevos y atrevidos, para todos los gustos y ocasiones. Además, el personal experto y amable está siempre dispuesto a ayudarte a encontrar el perfume perfecto para ti o para esa persona especial. No esperes más para visitar la Perfumería GC y dejarte cautivar por su encanto y elegancia.</p>
