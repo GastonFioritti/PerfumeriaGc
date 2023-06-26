@@ -6,16 +6,11 @@
   }
   body{
    font-family:'Montserrat', sans-serif;
-   font-weight: bold;
+      font-weight: bold;
   }
   /*Header y Nav*/
   header {
     background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .logoempresa {
@@ -32,38 +27,32 @@
     font-weight: bold;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+  .navbar {
+    background-color: transparent;
   }
   
-  nav a {
-    display: block;
-    padding: 10px;
-    color: #ffffff;
-    text-decoration: none;
+  .navbar .btn {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
   }
   
-  nav li {
-    position: relative;
-  }
-  
-  nav > ul > li > .submenu-list {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    max-height: 200px;
+  .navbar .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    background-color: #000;
+    max-height: 200px; 
     overflow-y: auto;
-    overflow-x: hidden; 
   }
   
-  nav .submenu-list li {
-    height: 50px;
+  .navbar .dropdown-item {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
   }
   
-  nav > ul > li:hover > .submenu-list {
-    display: block;
+  .navbar .dropdown-item:hover {
+    background-color: #0000001a;
   }
   
     /*INICIO*/
@@ -84,7 +73,7 @@
     padding: 15px;
   }
   .encabezado h1 {
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px 0;
     font-weight: bold;
   }
@@ -121,6 +110,14 @@
     border: none;
     outline: none;
    }
+  
+  .promocionimg img {
+    width: 500px !important;
+    height: 500px !important;
+    margin-right: 30px;
+    border: none;
+    outline: none;
+  }
   .promocion2{
     background-color: dimgray;
   }
@@ -150,12 +147,65 @@
     font-weight: bold;
     color: #ffffff;
   }
+
+  #subscription {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #subscription h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  #subscription p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  #subscription form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #subscription input[type="text"],
+  #subscription input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  #subscription button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  #subscription button:hover {
+    background-color: #696969;
+  }
+
   /* NOSOTROS */
   
-  .letratitulonosotros {
-    font-size: 30px;
+  .titulos {
+    font-size: 50px;
     text-align: center;
     color: #000;
+    margin-bottom: 30px;
   }
   
   .descripcionlocal {
@@ -249,35 +299,85 @@ ul {
   margin: 0 0 1rem 0;
 }
 /* PRODUCTOS Y MARCAS */
- .caja {
-  display: flex;
-  padding: 60px;
-  gap: 40px;
-  background-color: #ffffff;
-}
-.caja_titulo{
-  text-align: center;
-  font-weight: bold;
-}
- .caja .cajita {
-  border-radius: 3px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+
+/* Main */
+.container-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  flex: 1;
+  width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items:start;
+  margin-bottom: 30px;
 }
- .caja .caja_img {
-  width: 70%;
+h1{font-weight: bold;
+text-align: center;}
+
+.letraproducto{
+  font-weight: bold;
+  font-size: 25px;
+}
+.item{
+  border-radius: 10px;
+}
+
+.item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
   transition: all .5s;
 }
- .caja .cajita:hover img {
+
+.item figure{
+  overflow: hidden;
+}
+
+.item:hover img{
   transform: scale(1.2);
 }
- .cajita figure {
-  overflow: hidden;
-  text-align: center;
+
+.info-product{
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
 }
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.container {
+  display: flex;
+}
+
+.filter-list {
+  margin-right: 20px; 
+}
+ul li  {
+  font-weight: bold;}
+  h3 {
+    font-weight: bold;
+  }
+
 /* FOOTER */
 .footer {
   background: #000000;
@@ -309,64 +409,18 @@ ul {
   font-size: 12px;
 }
 
-  /*PROMOCIONES INICIO*/ 
-    .promocion1  img {
-      width: 90%; 
-      height: 550px; 
-    }
-    .promocion1{
-      background-color: #000000
-    }
-    
-    .promocion1 {
-      display: flex;
-      align-items: center;
-    }
-    
-    .promocion1 {
-      display: flex;
-      align-items: center;
-    }
-    .promocionimg img {
-      width: 500px !important;
-      height: 500px !important;
-      margin-right: 30px;
-      border: none;
-      outline: none;
-     }
-    .promocion2{
-      background-color: dimgray;
-    }
-    .boton-promociones {
-        background: #ffffff;
-        border: 2px solid #000000;
-        border-radius: 1000px;
-        padding: 20px 30px;
-        color: #000000;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .promocion2 {
-      display: flex;
-      align-items: center;
-    }
-    
-    .promocion2 img {
-      width: 500px; 
-      overflow: hidden; 
-    }
-    
-    .text-container {
-      flex: 1;
-      padding: 0 20px; 
-    }
-   
-    .text-container h2,
-    .text-container p {
-      font-weight: bold;
-      color: #ffffff;
-    }
- 
+@media (max-width: 1200px) {
+  .filter-list {
+    display: none;
+  }
+}
+@media (max-width: 920px) {
+  .container-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+}
     @media (max-width: 753px) {
       .boton-banner {
           padding: 15px 40px;
@@ -402,40 +456,41 @@ ul {
         }
 
         .promocionimg img{
-          width: 200px !important;
-          height: 200px !important;
+          width: 100% !important;
+          height:auto !important;
         }
         
         .encabezado p {
-          font-size: 20px;}
+          font-size: 15px;}
         .encabezado h1 {
           font-size: 15px;
      }
+     .promocion1 {
+      flex-direction: column;
+    }
+    
       .text-container{
-        font-size: 7px;
+        font-size: 15px;
+        margin-top: 20px;
      }
       .text-container h2{
-      font-size: 12px;
+      font-size: 20px;
     }
-    nav{
+    .promocion2 {
+        flex-direction: column-reverse;
+      }
+    
+      nav{
       font-size: 10px;
     }
     footer li{
       font-size: 8px;
     }
   }
+  
   @media (max-width: 422px) {
     .boton-promociones {
       padding: 3px 3px;
       font-size: 8px;
     }
-    .text-container{
-      font-size: 5px;
-     }
     }
-
- 
-  
-    
-
-
