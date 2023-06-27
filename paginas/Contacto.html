@@ -21,7 +21,7 @@
             <div class="d-flex align-items-center">
               <img src="../imagenes/Fondo.png" alt="logoempresa" class="logoempresa">
               <a class="navbar-brand" href="#">Perfumería GC</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
@@ -76,41 +76,84 @@
           </div>
         </nav>
       </header>
-    <div class="letracontacto">
-        <div class="centradocontacto">
-            <div class="fondocontacto">
-                <h3>Contacto</h3>
-                <form action="">
-                    <p>
-                        <label>Nombre Completo</label>
-                        <input type="text" name="nombrecompleto">
-                    </p>
-                    <p>
-                        <label>Correo Electrónico</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Número Telefónico</label>
-                        <input type="tel" name="teléfono">
-                    </p>
-                    <p>
-                        <label>Asunto</label>
-                        <input type="text" name="asunto">
-                    </p>
-                    <p class="block">
-                        <label>Mensaje</label>
-                        <textarea name="mensaje" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button>Enviar </button></p>
-                </form>
-            </div>
-            <div class="contact-info">
-                
-            </div>
+      <div class="container-fluid">
+      <div class="form">
+        <h1 class="titulos">Contáctate con nosotros</h1>
+        <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text"style="font-weight: bold;" id="name" name="name" required>
         </div>
+        <div class="form-group">
+          <label for="lastname">Apellido:</label>
+          <input type="text" style="font-weight: bold;" id="lastname" name="lastname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email"style="font-weight: bold;" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono:</label>
+          <input type="tel" style="font-weight: bold;" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Asunto:</label>
+          <textarea id="subject"  style="font-weight: bold;" name="subject" required></textarea>
+        </div>
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="offers" name="offers">
+            <label for="offers style="font-weight: bold;>Deseo recibir ofertas y promociones</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
     </div>
-
+    <div class="accordion-container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Política de cambios
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p> Plazo para cambios:</p>
+          <p>- Tienes un plazo de 30 días a partir de la fecha de compra para solicitar un cambio en un producto.</p>
+          - Los productos deben estar en su estado original, sin uso y en su embalaje original.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Política de privacidad
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>Información Recopilada:</p>
+          <p> - Recopilamos información personal, como nombre, dirección, dirección de correo electrónico y número de teléfono, cuando nos la proporcionas voluntariamente al realizar una compra o registrarte en nuestro sitio web.</p>
+          - También podemos recopilar información no personal, como datos demográficos y preferencias, para mejorar nuestros servicios y personalizar tu experiencia.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Términos y condiciones
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>Uso del Sitio Web:</p>
+          <p> -Nuestro sitio web está destinado únicamente para uso personal y no comercial.</p>
+          <p> - No se permite el uso del contenido de nuestro sitio web sin nuestro consentimiento expreso por escrito.</p>
+          - No toleramos el uso indebido, abusivo o fraudulento de nuestro sitio web.
+      </div>
+      </div>
+    </div>
+</div>
+</div>
+      
     <footer>
         <div class="footer">
             <div class="redes">
