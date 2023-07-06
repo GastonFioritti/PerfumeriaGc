@@ -27,6 +27,7 @@ header {
         display: flex;
         align-items: center;
         height: 30px;
+        padding-right: 20px;
     }
 
     .logo-nombre {
@@ -468,57 +469,15 @@ h3 {
     }
 }
 
-@media (max-width: 1300px) {
-    .filter-list {
-        display: none;
+@media (max-width: 1745px) {
+    .itemlocal {
+        width: 500px;
     }
 
     .container-locales {
         flex-direction: column;
         @include flex;
-        width: 300px;
-    }
-
-    .itemlocal img {
-        width: 300px;
-    }
-}
-
-@media (max-width: 920px) {
-    .container-items {
-        flex-direction: column;
-        @include flex;
-    }
-
-    .marca-destacada {
-        width: 200px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .marcas-destacadas-lista {
-        @include flex;
-        ;
-        flex-wrap: wrap;
-    }
-
-
-
-}
-
-@media (max-width: 753px) {
-    .boton-banner {
-        padding: 15px 40px;
-        font-size: 15px;
-    }
-
-    .text-container {
-        font-size: 10px;
-    }
-
-    .boton-promociones {
-        padding: 10px 10px;
-        font-size: 10px;
+        width: 500px;
     }
 }
 
@@ -542,11 +501,56 @@ h3 {
     .carousel {
         display: none;
     }
+
+    .container-locales {
+        flex-direction: column;
+        @include flex;
+    }
+}
+
+@media (max-width: 920px) {
+    .container-items {
+        flex-direction: column;
+        @include flex;
+    }
+
+    .marca-destacada {
+        width: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .marcas-destacadas-lista {
+        @include flex;
+        ;
+        flex-wrap: wrap;
+    }
+
+    .container-locales {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 753px) {
+    .boton-banner {
+        padding: 15px 40px;
+        font-size: 15px;
+    }
+
+    .text-container {
+        font-size: 10px;
+    }
+
+    .boton-promociones {
+        padding: 10px 10px;
+        font-size: 10px;
+    }
 }
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     nav {
         font-size: 10px;
     }
@@ -592,12 +596,26 @@ h3 {
         font-size: 8px;
     }
 
+    .itemlocal {
+        width: 300px;
+    }
 
-    @media (max-width: 422px) {
-        .boton-promociones {
-            padding: 3px 3px;
-            font-size: 8px;
-        }
+    .container-locales {
+        flex-direction: column;
+        @include flex;
+        width: 300px;
+    }
+
+    .itemlocal img {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 422px) {
+    .boton-promociones {
+        padding: 3px 3px;
+        font-size: 8px;
     }
 }
 

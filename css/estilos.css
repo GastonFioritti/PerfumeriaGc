@@ -19,6 +19,7 @@ header .logoempresa {
   display: flex;
   align-items: center;
   height: 30px;
+  padding-right: 20px;
 }
 header .logo-nombre {
   color: #ffffff;
@@ -380,6 +381,7 @@ h3 {
   background: #000000;
   padding: 10px 0px;
   text-align: center;
+  width: 100%;
 }
 .footer p {
   font-size: 12px;
@@ -406,18 +408,36 @@ h3 {
   color: #ffffff;
 }
 
-@media (max-width: 1300px) {
-  .filter-list {
+@media (max-width: 1745px) {
+  .itemlocal {
+    width: 500px;
+  }
+  .container-locales {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+  }
+}
+@media (max-width: 705px) {
+  footer .redes ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul li {
+    margin: 5px 0;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .carousel {
     display: none;
   }
   .container-locales {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 300px;
-  }
-  .itemlocal img {
-    width: 300px;
   }
 }
 @media (max-width: 920px) {
@@ -436,6 +456,9 @@ h3 {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .container-locales {
+    width: 500px;
+  }
 }
 @media (max-width: 753px) {
   .boton-banner {
@@ -450,23 +473,7 @@ h3 {
     font-size: 10px;
   }
 }
-@media (max-width: 705px) {
-  footer .redes ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer ul li {
-    margin: 5px 0;
-  }
-  footer p {
-    font-size: 10px;
-  }
-  .carousel {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   nav {
     font-size: 10px;
   }
@@ -500,8 +507,20 @@ h3 {
   footer li {
     font-size: 8px;
   }
+  .itemlocal {
+    width: 300px;
+  }
+  .container-locales {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
+  .itemlocal img {
+    width: 300px;
+  }
 }
-@media (max-width: 480px) and (max-width: 422px) {
+@media (max-width: 422px) {
   .boton-promociones {
     padding: 3px 3px;
     font-size: 8px;
